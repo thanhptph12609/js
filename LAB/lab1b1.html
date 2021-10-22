@@ -1,0 +1,37 @@
+<p>
+    -----------Bài 1------------</p>
+<style>
+    #target {
+        width: 60px;
+        height: 60px;
+        background: #33691e;
+    }
+</style>
+<div id="target">
+
+</div>
+<script>
+    var target = document.querySelector("#target");
+    target.onmouseover = function() {
+        // thực hiện đổi sang màu #BF360C
+        target.style.backgroundColor = '#BF360C';
+    }
+    target.onmouseout = function() {
+        //thực hiện đổi sang màu #33691E
+        target.style.backgroundColor = '#33691E';
+    }
+</script>
+<select name="tagName" id="">
+    <option value="1">Thẻ P</option>
+    <option value="2">Thẻ strong</option>
+    <option value="3">Thẻ input </option>
+    <option value="4">Thẻ button</option>
+</select>>
+<div class="content"></div>
+<script>
+    //tạo sự kiện cho thẻ select
+    //Khi giá trị của thẻ select thay đổi thì sẽ sinh ra 1 thẻ tương ứng 
+    // ứng với giá trị được chọn
+    // sau đó sinh ra để trong thẻ div.content
+    //lưu ý cố gắng giữ lại các thẻ đã được sinh ra trong div.content
+</script>

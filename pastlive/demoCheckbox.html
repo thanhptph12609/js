@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+
+        <input type="checkbox" name="" id="a"><label for="">A</label>
+    </div>
+    <button id="btnSubmit">Submit</button>
+    <script>
+        function checkData() {
+
+            if (document.querySelector("#a").checked == false) {
+                alert("phai tich vao o nay");
+            } else{
+                alert('thanh cong');
+            }
+        }
+        var btnSubmit = document.querySelector("#btnSubmit");
+
+        btnSubmit.addEventListener('click',checkData);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+</head>
+
+<body>
+    <form>
+        <label for="">String</label>
+        <input type="text" id="string"> <br>
+        <button type="button" id="button">Convert</button>
+    </form>
+    <h2 id="result">
+
+    </h2>
+    <script>
+        var string = document.getElementById('string');
+        var button = document.getElementById('button');
+        button.addEventListener('click', () => {
+            //tạo thêm thẻ h2
+            var h2 = document.createElement("h2");
+            h2.innerHTML = `độ dài -${string.value.length}`;
+            result.appendChild(h2);
+        })
+    </script>
+</body>
+
+</html>

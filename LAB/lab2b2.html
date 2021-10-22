@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+</head>
+
+<body>
+    <form>
+        <label for="">string</label>
+        <input type="text" id="string"><br>
+        <label for="">Number</label>
+        <input type="number" id="number"><br>
+        <button type="button" id="button">kết quả</button>
+    </form>
+    <h3 id="result">
+
+    </h3>
+    <script>
+        var string = document.getElementById('string');
+        var n = Number(document.getElementById('number')).value;
+        var button = document.getElementById('button');
+        button.addEventListener('click', () => {
+            var h3 = document.createElement("h3");
+            console.log(n);
+            if (string.value.length > n) {
+                result.appendChild(h3).innerHTML = `${string.slice(0,n)+ "..."}`;
+            } else {
+                h3.innerHTML = `${string+"."}`;
+                result.appendChild(h3);
+            }
+
+        })
+    </script>
+</body>
+
+</html>

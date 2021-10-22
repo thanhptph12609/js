@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sửa sản phẩm</title>
+    <style>
+        * {
+            margin: 8px;
+        }
+
+        input {
+            width: 500px;
+            padding: 4px;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <div>
+            <label for="name">Tên sản phẩm</label><br />
+            <input type="text" id="name" name="name" placeholder="Nhập tên vào">
+        </div>
+        <div>
+            <label for="image">Link ảnh</label><br />
+            <input type="text" id="image" name="image" placeholder="Nhập link ảnh vào">
+        </div>
+        <div>
+            <label for="detail">Mô tả</label><br />
+            <input type="text" id="detail" name="detail" placeholder="Nhập mô tả vào">
+        </div>
+        <div>
+            <label for="price">Giá</label><br />
+            <input type="number" id="price" name="price" placeholder="Nhập giá vào">
+        </div>
+        <div>
+            <label for="price">Danh mục sản phẩm</label><br />
+            <select id="categoryId" name="categoryId">
+            </select>
+        </div>
+        <button>Lưu</button>
+    </form>
+
+    <script src="trang-chu.js"></script>
+    <script>
+        app.getDataEditProduct();
+    </script>
+</body>
+
+</html>

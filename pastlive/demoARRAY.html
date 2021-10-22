@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var array = [1, 2, 3, 4, 5];    // khởi tạo mảng
+        var array2 = ['g', 'a', 'e', 'b', 'ee', 1, 7, 3, 8];
+        // var array = new Array(1,2,3,4,5);    //khai báo mảng
+        // console.log(array[2]);       //log ra giá trị 1 phần tử của mảng
+
+        /* truy xuất toàn bộ giá trị của mảng */
+        // for(i=0;i<array.length;i++){
+        //     console.log(array[i]);
+        // }
+        console.log('forEach Loop');
+        /* truy xuất toàn bộ giá trị của mảng */
+        array.forEach(function (element, index) {
+            console.log('[' + index + '] = ' + element);
+        })
+        console.log(array.join('-'));
+        /*
+            gộp tất cả các phần tử vào thành chuỗi
+            mặc định các phần tử gộp vào được phân tách nhau bằng dấu phẩy ( , )
+            muốn thay đổi dấu phân tách thì ta truyền vào trong hàm 1 ký tự trong dấu ''
+        */
+        console.log(array.concat(array2));  //gộp 2 mảng vào thành 1
+        console.log('-------------------');
+        array.unshift(0);   //thêm mới phần tử vào đầu
+        array.push(6);  //thêm mới phần tử vào cuối
+        array.splice(4, 2, 200, 300);
+        /*
+            Thêm phần tử vào mảng theo vị trí xác định
+
+            Cú pháp array.splice(index, howmany, item1, ....., itemX)
+
+            array là tên biến mảng các bạn muốn thêm vào.
+            index là vị trí mà các bạn muốn thêm phần tử vào (bắt đầu từ 0).
+            howmany là số phần tử sẽ xóa tính tự vị trí thêm mảng, để 0 nếu không muốn xóa phần tử nào.
+            item1,...itemX là giá trị của các phần tử muốn thêm vào.
+        */
+        array.forEach(function (element, index) {
+            console.log('[' + index + '] = ' + element);
+        })
+
+        console.log('-------------------');
+        // array2.pop();    //xóa vị trí cuối cùng của mảng
+        // array2.shift();  //xóa vị trí đầu tiên của mảng
+        // array2.splice(2,2);  
+        array2.sort();  // sắp xếp thứ tự của mảng
+        array2.reverse();   // đảo ngược thứ tự của mảng
+        array2.forEach(function (element, index) {
+            console.log('[' + index + '] = ' + element);
+        })
+
+    </script>
+</body>
+
+</html>

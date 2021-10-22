@@ -1,0 +1,21 @@
+<p>-----------Bài 2------------</p>
+<style>
+    #color {
+        display: block;
+        height: 30px;
+        line-height: 30px;
+        margin-bottom: 20px;
+        width: 200px;
+    }
+</style>
+<input type="text" id="txtInput" value="33691E">
+<h3>Input text</h3>
+<script>
+    var h3Text = document.querySelector("h3");
+
+    var txtInput = document.querySelector("#txtInput");
+    txtInput.onkeyup = function() {
+        var text = document.querySelector('#txtInput').value;
+        h3Text.innerText = text;
+    }
+</script>

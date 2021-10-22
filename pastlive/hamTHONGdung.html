@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var a = 10;
+        if (isNaN(a)) {
+            console.log('a khong phai la so');
+        } else {
+            console.log('a la mot so');
+        }
+
+        /*ham alert*/
+        function canhBao() {
+            alert('Demo alert');
+        }
+        canhBao(); //goi ham 
+
+        /*ham confirm*/
+        function xacNhan() {
+            confirm('Ban xac nhan thao tac khong?');
+        }
+        xacNhan(); //goi ham xac nhan 
+
+        /* ham nhap du lieu tu ban phim - prompt()*/
+
+        var giaTri = prompt('Nhap vao gia tri cua ban'); // nhap gia tri tu ban phim vao va gan cho bien giaTri
+        console.log(giaTri); // hien thi gia tri vua nhap vao
+    </script>
+</body>
+
+</html>

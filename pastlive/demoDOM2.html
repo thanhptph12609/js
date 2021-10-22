@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="color" class="color">
+        <h3 id="colorText">green </h3>
+    </div>
+    <p class="color"></p>
+    <!-- <button id="btnClick" onclick="thongBao()">Click</button> -->
+    <!-- thêm sự kiện trực tiếp trong thẻ html (thêm bằng html attribute)-->
+    <button id="btnClick">Click</button>
+    <script>
+        // document.getElementById('color');
+        // document.getElementsByTagName('div');
+        // document.getElementsByClassName('color');
+        // document.querySelector('.color');
+        // document.querySelectorAll('.color');
+
+        var colorText = document.querySelector('#colorText');
+        var colorDiv = document.querySelector('#color');
+
+        // console.log(color.innerHTML);
+        // color.innerHTML = 'red';
+        // color.setAttribute('class','abc');
+        // console.log(color.getAttribute('class'));
+
+        // colorText.style.color = 'red';      //thiết lập giá trị của thuộc tính color
+        colorDiv.style.border = '1px solid red';    //thiết lập giá trị của thuộc tính border
+
+        colorDiv.style.backgroundColor = 'green';
+        /* 
+            thiết lập giá trị background color
+            quy tắc: chuyển thuộc tính về dạng viết liền như sau:
+            backround-color -> backgroundColor 
+            margin-top -> marginTop
+        */
+        colorDiv.style.marginTop = '100px';
+
+        function thongBao() {
+            alert('Canh bao nguoi yeu dang ngoi voi thang khac');
+        }
+
+        var btnClick = document.querySelector('#btnClick');
+
+        // btnClick.onclick = function(){
+        //     alert('Canh bao nguoi yeu dang ngoi voi thang khac');
+        // }
+        /* thêm sự kiện bằng js */
+
+        // btnClick.addEventListener('click',function(){
+        //     alert('sap master roi :3');
+        // })
+        /* thêm sự kiện sử dụng eventListener */
+
+        // btnClick.addEventListener('click',thongBao);
+        colorText.addEventListener('mouseover', thongBao);
+
+    </script>
+</body>
+
+</html>

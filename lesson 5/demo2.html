@@ -1,0 +1,57 @@
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+    /*Luyện tập: tạo lớp VanDongVien bằng phương pháp Object constructor functions gồm các thuộc tính/phương thức sau:
+                                            ma_van_dong_vien
+                                            ho_va_ten
+                                            ngay_sinh
+                                            giai_thuong
+                                            kiemTraDieuKien()
+                                            themGiaiThuong()
+                                            danhSachGiaiThuong()
+                                            Phương thức kiemTraDieuKien() trả về true/false, nhận 2 tham số là:
+                                            Chuỗi ngày tháng năm (ngày tổ chức giải đấu tiếp theo)
+                                            Số tuổi đủ điều kiện tham gia thi đấu
+                                            Yêu cầu 1: viết code cho hàm để kiểm tra xem với ngày tháng năm sinh của mình, vận động viên có đủ điều kiện tham gia thi đấu hay không?
+                                            Thuộc tính giai_thuong là dạng mảng chứa các phần tử dạng chuỗi để lưu lại các giải thưởng của vận động viên đạt được.
+                                            Phương thức themGiaiThuong() trả về số lượng giải thưởng của vận động viên, nhận tham số là:
+                                            Chuỗi là tên giải thưởng của vận động viên nhận được
+                                            Yêu cầu 2: viết code cho phương thức themGiaiThuong() để thêm phần tử cho thuộc tính giai_thuong.
+                                            Yêu cầu 3: viết code cho phương thức danhSachGiaiThuong() để hiển thị danh sách các giải thưởng mà vận động viên đã đạt được */
+    function thanh(ma_van_dong_vien, ho_va_ten, ngay_sinh, giai_thuong) {
+        this.ma_van_dong_vien = ma_van_dong_vien;
+        this.ho_va_ten = ho_va_ten;
+        this.ngay_sinh = ngay_sinh;
+        this.giai_thuong = giai_thuong;
+        this.KiemTraDieuKien = function(ngay_to_chuc, so_tuoi_yc) {
+
+            let ngay_sinh = moment(this.ngay_sinh);
+            let ngay_thi_dau = moment(ngay_to_chuc);
+            let sotuoi = ngay_to_chuc.diff(ngay_sinh, 'year');
+            return sotuoi <= so_tuoi_yc;
+
+        };
+        this.kiemTraKetHon = function(ngay_sinh_chong, ngay_sinh_vo) {
+            ngay_sinh_chong = moment(ngay_sinh_chong);
+            ngay_sinh_vo = moment(ngay_sinh_vo);
+            let now = moment();
+            let months_ck = now.diff(ngay_sinh_chong, 'month');
+            let months_vk = now.diff(ngay_sinh_vo, 'month');
+            if (months_ck >= 20 * 12 && months_vk >= 18 * 12) {
+                return true;
+            } else {
+                return false;
+            }
+
+        };
+        this.themgiaithuong = function() {
+
+        };
+        this.danhSachGiaiThuong = function() {
+
+        }
+
+    }
+    var pthanh = new thanh('123', 'phạm thị thanh', '2000-11-05', 'A');
+    console.log(pthanh.KiemTraDieuKien("2024-12-23", "18"));
+    console.log(kiemTraKetHon("2000-09-09", "1999-04-04"));
+</script>

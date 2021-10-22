@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <select name="" id="quoc-gia">
+        <option value="">Chọn quốc gia</option>
+        <option value="Anh">Anh</option>
+        <option value="Ai Cập">Ai Cập</option>
+        <option value="Hà Lan">Hà lan</option>
+    </select>
+    <button id="btnSubmit">Submit</button>
+    <script>
+
+        var quocGia = document.getElementById("quoc-gia"); //tìm thẻ có id là quoc-gia
+
+        //ham validate dữ liệu
+        function validate() {
+            //kiểm tra value có trống hay không, nếu trống thì thông báo phải chọn, nếu không trống thì thông báo thành công
+            if (quocGia.value == "") {
+                alert("Ban phai chon quoc gia");
+            }
+            else{
+                alert("Chon quoc gia thanh cong");
+            }
+        }
+
+        var btnSubmit = document.getElementById("btnSubmit");    //tìm button có id là btnSubmit
+        btnSubmit.addEventListener('click', validate);  //thêm sự kiện cho button
+    </script>
+</body>
+
+</html>

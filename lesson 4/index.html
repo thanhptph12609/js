@@ -1,0 +1,31 @@
+<script src="https://cdn.jsdelivr.net/npm/moment@2.24.0/moment.min.js"></script>
+<script>
+    var thanh = {
+        ma_sinh_vien: "PH12609",
+        ho_va_ten: "Phạm Thị Thanh",
+        lop: "PT16101",
+        ngay: "8-11-2019",
+        hocluc: 6.0,
+        tinhHocLuc: function() {
+            if (this.hocluc < 5) {
+                console.log('Học lực yếu')
+            } else if (5 < this.hocluc < 7) {
+                console.log('Học lực trung bình')
+            } else if (7 < this.hocluc < 8) {
+                console.log('Học lực Khá')
+            } else if (8 < this.hocluc < 10) {
+                console.log('Học lực giỏi')
+            }
+        },
+        thoiGian: function() {
+            var day0 = new Date(this.ngay);
+            var day1 = new Date();
+            day0.setMonth(12, this.ngay);
+            var a = day1.getMonth() - day0.getMonth();
+            var ra = 28 - a;
+            console.log(ra);
+        }
+
+    };
+    console.log(thanh);
+</script>

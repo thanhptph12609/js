@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #firstTitle h3 {}
+    </style>
+</head>
+
+<body>
+    <div id="firstTitle">
+        <h3>Title</h3>
+    </div>
+    <div id="secondTitle">
+        <h3>Title</h3>
+    </div>
+
+    <div class="sample">
+        <p class="sample-text">abc</p>
+    </div>
+    <div class="sample">
+        <span class="sample-text">hdhdh</span>
+    </div>
+    <p class="sample">
+        <span class="sample-text">hdhdh</span>
+    </p>
+
+    <div class="main-title">abc</div>
+    <div class="main-title">def</div>
+    <input value="Click" id="btn-click">
+    <script>
+        // var firstTitle = document.getElementById('firstTitle');  // Tìm thẻ theo id
+        // console.log(firstTitle );
+
+        // var mainTitle = document.getElementsByClassName('main-title');   //Tìm thẻ theo tên class -> trả về 1 mảng chứa tất cả các thẻ có cùng tên class
+        // // console.log(mainTitle);   
+        // // console.log(mainTitle[0]);    //log ra giá trị của phần tử đầu tiên trong mảng vừa tìm thấy
+        // for(i=0;i<mainTitle.length;i++){
+        //     console.log(mainTitle[i]);
+        // }
+        /* Truy xuất toàn bộ phần tử trong mảng vừa tìm */
+
+        // var divEle = document.getElementsByTagName('div');   // Tìm theo tên thẻ -> trả về 1 mảng chứa toàn bộ các thẻ tìm thấy theo cú pháp 
+        // // console.log(divEle);
+        // // console.log(divEle[1]);   // log ra giá trị của phần tử có index = 1 trong mảng
+
+        // for(i=0;i<divEle.length;i++){
+        //     console.log(divEle[i]);
+        // }
+        /* Truy xuất toàn bộ phần tử trong mảng vừa tìm */
+
+        // // var querySelect = document.querySelector('#firstTitle h3');   
+        /*
+            trả về phần tử đầu tiên thỏa mãn cú pháp selector
+        */
+        // // console.log(querySelect);     //log ra giá trị của phần tử tìm thấy
+
+        // var querySelect = document.querySelectorAll('.sample');
+        // console.log(querySelect);
+        /* 
+            tìm theo cú pháp selector 
+            .sample: tìm tất cả các thẻ thỏa mãn cú pháp selector .sample
+            giá trị trả về sẽ là 1 mảng các phần tử thỏa mãn cú pháp selector đó
+        */
+
+        // var mainTitle = document.querySelectorAll('.main-title');    //tìm tất cả các thẻ có class là .main-title
+        // console.log(mainTitle.innerHTML);
+        // mainTitle[1].innerHTML = 'nguoi yeu toi la hoa hau hoan vu :3 '; // thay đổi nội dung của thẻ html vừa tìm được 
+        // console.log(mainTitle.innerHTML);    //log ra nội dung của thẻ đó
+
+        // for(j=0;j<mainTitle.length;j++){
+        //     mainTitle[j].innerHTML = 'nguoi yeu toi la hoa hau hoan vu :3 ';
+        // }
+
+        var btnClick = document.querySelector('#btn-click');
+        // btnClick.setAttribute('disabled','');    //thiết lập thuộc tính cho 1 thẻ 
+        btnClick.setAttribute('type', 'checkbox');
+        // var btnValue = btnClick.getAttribute('value');
+        // console.log(btnValue);
+        /* lấy ra giá trị thuộc tính của 1 thẻ  */
+
+        // btnClick.setAttribute('type','text');
+
+        // console.log(btnClick.value);
+    </script>
+</body>
+
+</html>

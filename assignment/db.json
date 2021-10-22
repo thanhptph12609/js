@@ -1,0 +1,64 @@
+{
+  "categories": [
+    {
+      "id": 1,
+      "name": "Chuột máy tính"
+    },
+    {
+      "id": 2,
+      "name": "Bàn phím"
+    },
+    {
+      "id": 3,
+      "name": "Bàn phím cơ"
+    },
+    {
+      "id": 4,
+      "name": "Laptop HP"
+    }
+  ],
+  "products": [
+    {
+      "id": 2,
+      "name": "Logitech M590",
+      "categoryId": 1,
+      "price": 590000,
+      "detail": "Chuột xịn",
+      "image": "https://cf.shopee.vn/file/4183bad194fb97a1ee9441c7c3c9af51"
+    },
+    {
+      "id": 3,
+      "name": "ducky xxx",
+      "categoryId": 3,
+      "price": 2800000,
+      "detail": "Bàn phím cơ nhập khẩu từ hàn xẻng",
+      "image": "http://maytinhvietphong.vn/media/news/130_ban_phim_co_gaming_newmen_gm300_tenkeyless.jpg"
+    },
+    {
+      "id": 4,
+      "name": "ducky yyy",
+      "categoryId": 3,
+      "price": 2500000,
+      "detail": "Bàn phím cơ nhập khẩu từ Hà Nam",
+      "image": "https://img.websosanh.vn/v10/users/review/images/kddx3v8xjx2om/15629035958661416261.jpg?compress=85"
+    },
+    {
+      "id": 5,
+      "name": "ducky zzz",
+      "categoryId": 3,
+      "price": 2750000,
+      "detail": "Bàn phím cơ nhập khẩu từ Nam định",
+      "image": "https://www.phucanh.vn/media/news/2009_DSC02747.jpg"
+    },
+    {
+      "id": 6,
+      "name": "corsa 111",
+      "categoryId": 3,
+      "price": 4000000,
+      "detail": "Bàn phím cơ của italia",
+      "image": "https://anphat.com.vn/media/product/29359_e_dra_ek387.jpg"
+    }
+  ],
+  "orders": [],
+  "order_detail": []
+}

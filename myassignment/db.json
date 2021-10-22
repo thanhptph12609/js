@@ -1,0 +1,42 @@
+{
+  "categories": [
+    {
+      "id": 3,
+      "name": "Đồ chơi công nghệ"
+    },
+    {
+      "id": 4,
+      "name": "Sale"
+    },
+    {
+      "name": "iphone 13 pro",
+      "id": 5
+    }
+  ],
+  "products": [
+    {
+      "id": 3,
+      "name": "Loa blutool",
+      "categoryId": 3,
+      "price": 2500000,
+      "detail": "Âm thanh chuẩn",
+      "image": " https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSZHUGbIcY6wIF9_sjxHBO1es8Rc7yDvEGD8wBT6bcbVdzLo3RD6NWMJH-mh2zo&usqp=CAc"
+    },
+    {
+      "id": 4,
+      "name": "Thẻ viettel 100k",
+      "categoryId": 4,
+      "price": 500000,
+      "detail": "Thẻ cào 100k với giá bán chỉ 50k",
+      "image": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcTsmcABj3BhmR1I-BCqL8J0X8_iuipFTXRR95TXnySB6NvycYjW4VxG0kLVNHzsl-YG_jfOvWhgVdhXpRP9CLHeK59hXzBBQD54HTYge9s&usqp=CAc"
+    },
+    {
+      "id": 5,
+      "name": "corsa 111",
+      "categoryId": 4,
+      "price": 4000000,
+      "detail": "Bàn phím cơ của italia",
+      "image": "https://anphat.com.vn/media/product/29359_e_dra_ek387.jpg"
+    }
+  ]
+}

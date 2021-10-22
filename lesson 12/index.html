@@ -1,0 +1,18 @@
+<input type="checkbox" value="1">java
+<br>
+<input type="checkbox" value="2"> C sharp
+<br>
+<input type="checkbox" value="3">php
+<br>
+<input type="checkbox" value="4"> js
+<button>
+
+</button>
+ <script>
+     let listSubject=[];
+     $('input[type="checkbox"]').click(function){
+         if($(this).is(':checked')){
+             listSubject.push($(this));
+         }
+     }
+ </script>

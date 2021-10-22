@@ -1,0 +1,61 @@
+<div class="form">
+    <div>
+        <label> ID</label>
+        <input type="number" id="addUserID" value="" placeholder="">
+    </div>
+    <div>
+        <label>Name</label>
+        <input type="text" id="addUserName" value="" placeholder="">
+    </div>
+    <div>
+        <label>Gender</label>
+        <select id="addUserGender">
+            <option value="1">male</option>
+            <option value="2">female</option>
+        </select>
+    </div>
+    <div>
+        <button type="button" id="addAction" onclick="getname()">Add</button>
+    </div>
+</div>
+<ul id="target">
+
+</ul>
+<script>
+    var users = [{
+        id: 1,
+        name: "Smith",
+        gender: 1
+    }, {
+        id: 2,
+        name: "Brown",
+        gender: 2
+    }, {
+        id: 3,
+        name: "Evans",
+        gender: 1
+    }];
+    // var target = document.querySelector("#target");
+    var content = users.map(item => {
+        return `<li class='user_item'>${item.id} ${item.name} ${item.gender == 1 ? 'male' : 'female'} </li>`
+    }).join(".");
+    document.querySelector("#target").innerHTML = content;
+
+    var id = document.querySelector('#addUserID');
+    var addname = document.querySelector('#addUserName');
+    var gender = document.querySelector('#addUserGender');
+    var add = document.querySelector('#addAction');
+    add.addEventListener("click", function() {
+        var gg = document.createElement("li"); // tạo ra thẻ li
+        gg.setAttribute('class', ''); ///
+        gg.innerText = `${id.value}-${addname.value}-${gender == 1 ? 'female' : 'male'}`;
+        document.querySelector("#target").appendChild(gg);
+    })
+
+    // function getname() {
+    //     var contentnew = usersNew.map(item => {
+    //     return `<li class='user_item'>${item.id} ${item.name} ${item.gender == 1 ? 'male' : 'female'} </li>`
+    //     }).join(".");
+    //     document.querySelector("#target").innerHTML = contentnew;
+    // }
+</script>

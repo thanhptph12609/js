@@ -1,0 +1,64 @@
+{
+  "categories": [
+    {
+      "id": 1,
+      "name": "Apple"
+    },
+    {
+      "id": 2,
+      "name": "Samsung"
+    },
+    {
+      "id": 3,
+      "name": "Oppo"
+    },
+    {
+      "name": "Xiaomi",
+      "id": 4
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "name": "iPhone 12",
+      "categoryId": 1,
+      "price": 3200000,
+      "detail": "Đây là iPhone",
+      "image": "https://cdn.tgdd.vn/Products/Images/42/213031/iphone-12-xanh-duong-600x600.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Oppo A93",
+      "categoryId": 3,
+      "price": 2750000,
+      "detail": "Điện thoại oppo",
+      "image": "https://cdn.tgdd.vn/Products/Images/42/235971/xiaomi-redmi-note-10-5g-xanh-bong-dem-1-600x600.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Samsung Galaxy A02",
+      "categoryId": 2,
+      "price": 4000000,
+      "detail": "Máy samsung",
+      "image": "https://cdn.tgdd.vn/Products/Images/42/153856/iphone-xi-do-600x600.jpg"
+    },
+    {
+      "name": "Opo j j day",
+      "image": "https://cdn.tgdd.vn/Products/Images/42/220438/oppo-reno5-trang-600x600-1-600x600.jpg",
+      "detail": "SOn tung",
+      "price": "1234",
+      "categoryId": "3",
+      "id": 4
+    },
+    {
+      "name": "iPad mini 4",
+      "image": "https://cdn.tgdd.vn/Products/Images/522/228808/ipad-air-4-wifi-64gb-2020-xanhduong-600x600-600x600.jpg",
+      "detail": "iPad xịn lắm",
+      "price": "16000000",
+      "categoryId": "1",
+      "id": 5
+    }
+  ],
+  "orders": [],
+  "order_details": []
+}

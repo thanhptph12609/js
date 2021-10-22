@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>demo hàm parent()</title>
+    <style>
+        div,
+        ul,
+        li {
+            width: 200px;
+            padding: 5px;
+            margin: 5px;
+            border: 1px solid red;
+        }
+        
+        .abc {
+            border: 1px solid red;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>jquery Traversing-parent</h3>
+    <button>
+        Highlight parent of element width class='abc'
+    </button>
+    <div>
+        <ul>
+            <li class="abc">li class='abc'</li>
+            <li>li element</li>
+            <li>li element</li>
+        </ul>
+    </div>
+    <div>
+        <div class="abc">Div class='abc'</div>
+    </div>
+    <script>
+        function highlightParent() {
+            $('.abc').parent().css("background", "#ccc")
+        }
+    </script>
+</body>
+
+</html>

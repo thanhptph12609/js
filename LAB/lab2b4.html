@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="">
+        <label for="">Email</label>
+        <input type="text" id="email">
+        <button type="button" id="button">check</button>
+    </form>
+    <h3 id="result">
+
+    </h3>
+    <script>
+        var email = document.getElementById('email');
+        var button = document.getElementById('button');
+        button.addEventListener('click', () => {
+            var check = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+            var h3 = document.createElement("h3");
+            if (check.test(email.value)) {
+                result.appendChild(h3).innerHTML = "TRUE";
+            } else {
+                result.appendChild(h3).innerHTML = "FALES";
+
+            }
+
+        })
+    </script>
+</body>
+
+</html>
+
+<!-- var email = document.getElementById("email");
+		var btn = document.getElementById("btn");
+		btn.addEventListener("click", () => {
+			var filter = ;
+			var h3 = document.createElement("h3");
+			if (filter.test(email.value)) {
+				demo.appendChild(h3).innerHTML = "TRUE";
+				
+			}else {
+				demo.appendChild(h3).innerHTML = "FALES";
+			}
+		})
+	 -->

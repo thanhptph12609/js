@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="total()">Tinh Tong</button>
+    <script>
+        var a, b;
+        a = 5;
+        b = 10;
+
+        console.log(a + b);
+
+        var d, e;
+        d = 500;
+        e = 1000;
+
+        console.log(d + e);
+
+        function total() {
+            var a = prompt('nhap gia tri thu nhat');
+            var b = prompt('nhap gia tri thu 2');
+            return a + b;
+        }
+
+        function tinhTong(a, b) {
+            // console.log(a + b);
+            return a + b;
+        }
+        function phepNhan(a, b) {
+            // console.log(a + b);
+            return a * b;
+        }
+        tinhTong(100, 200);
+        tinhTong(50000, 20000);
+    </script>
+</body>
+
+</html>

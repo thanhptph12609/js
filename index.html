@@ -1,0 +1,19 @@
+<input type="text">
+<button onclick="sendAjaxRequest()">Click me</button>
+<script>
+    function sendAjaxRequest() {
+        let keyword = document.querySelector('input').value;
+        const formData = new FormData();
+        fromData.append('keyword', keyword);
+        fetch('http://localhost/testphp/test.php', {
+                method: 'post',
+                body: fromData
+            })
+            .then(resp => resp.json())
+            .then(responseData => {
+
+                console.log(responseData);
+            })
+
+    }
+</script>

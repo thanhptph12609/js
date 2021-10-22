@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <label for="">Email</label> <br />
+    <input type="email" id="mail" />
+    <button id="submit">Đăng kí</button>
+    <script>
+        var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/; // gan dinh dang mail
+        var email_student = document.getElementById("mail"); // tim the co id la mail
+        var submit = document.getElementById("submit"); // tim the co id la submit
+
+        //ham validate du lieu
+        function validate() {
+            if (email_student.value==""){
+                alert("Phai nhap email");
+                email_student.focus();
+                return false;
+            }
+
+            //kiem tra dinh dang mail
+            else if (!filter.test(email_student.value)) {
+                alert("Email không hợp lệ!");
+                email_student.focus();
+                return false;
+            } else{
+                alert('Thành công');
+            }
+        }
+        submit.addEventListener('click',validate); // them su kien cho button submit
+    </script>
+</body>
+
+</html>

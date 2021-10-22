@@ -1,0 +1,50 @@
+<!-- Object literals: không có tính chất kế thừa -->
+<!-- <script>
+    var thanh = {
+        name: "phạm thanh",
+        age: 23,
+    }
+    console.log('thanh.name');  
+</script> -->
+<!-- Object constructor functions -->
+<!-- <script>
+    function Thanh(name, age) {
+        this.name = name;
+        this.age = age;
+        this.run = function () {
+            console.log(this.name + "running");
+        }
+    }
+    var dt = new Thanh('thanh', 21);
+    console.log(dt);
+    dt.run();
+</script> -->
+<!-- JSON là định dạng lưu trữ thông tin có cấu trúc và chủ yếu được sử dụng để
+ truyền dữ liệu giữa server và client
+{
+    "student":[
+        {
+            "id":1
+            "name":thanh
+        }
+        {
+
+        }
+    ]
+} -->
+
+<!-- Promise là một cách tốt để xử lý các hoạt động không đồng bộ
+Hàm tạo Promise() nhận một hàm làm đối số.
+Hàm này cũng chấp nhận hai hàm là resolve()và reject(). Nếu Promise trả về
+thành công, hàm resolve() được gọi. Và, nếu có lỗi xảy ra, hàm reject() được gọi.
+<script>
+
+    let vi_du = new Promise(function (resolve, reject) {
+        if (true) { resolve("xử lí xong") }
+        else {
+            reject("lỗi")
+        }
+
+    });
+    console.log(vi_du);
+</script> -->

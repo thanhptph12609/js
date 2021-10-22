@@ -1,0 +1,26 @@
+<script>
+    // 1. lấy id từ đường dẫn
+    // const urlParams = new URLSearchParams(window.location.search);
+    // const productId =  urlParams.get('id');
+
+    // // 2. gửi request lên json-server để lấy thông tin của product
+    // const product = fetch('http://localhost:3000/products/' + productId);
+
+    // // 3. gửi request lên json-server để lấy thông tin của relate products
+    // // dựa vào product.categoryId
+    // const relateProducts = fetch('http://localhost:3000/products?categoryId=' + product.categoryId);
+
+    // 4s => 1
+    // 2s => 2
+    // 3s => 3
+    // callback hell
+    setTimeout(function() {
+        console.log(1);
+        setTimeout(function() {
+            console.log(2);
+            setTimeout(function() {
+                console.log(3);
+            }, 3000)
+        }, 2000)
+    }, 4000)
+</script>
